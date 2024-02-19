@@ -18,6 +18,7 @@ export default function PtoInfo({
   return (
     <div className={classes.inputContainer}>
       <Text fw={700}>Current Date: {new Date().toLocaleDateString()}</Text>
+      
       <NumberInput
         label="Enter Current PTO Balance"
         value={currentBalance}

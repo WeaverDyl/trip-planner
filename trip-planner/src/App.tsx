@@ -4,7 +4,7 @@ import classes from './App.module.css';
 
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
-import PtoInfo from './components/pto-info/ptoInfo';
+import PtoInfo from './components/ptoInfo/ptoInfo';
 import TripInfo from './components/tripInfo/tripInfo';
 import { useLocalStorage } from '@mantine/hooks';
 import { SetStateAction, useState } from 'react';

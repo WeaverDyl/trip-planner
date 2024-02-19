@@ -16,7 +16,6 @@ interface TripInfoProps {
 // TODO: populate header and footer
 // TODO: light/dark mode toggle
 // TODO: improve performance
-
 export default function TripInfo({ trips, updateTrips}: TripInfoProps) {
   const [ptoHours, setPtoHours] = useState<number>(0);
   
@@ -72,10 +71,9 @@ export default function TripInfo({ trips, updateTrips}: TripInfoProps) {
 
       <Group>
         {trips.map((item, index) => (
-          // TODO: flex
           <div
-          className={classes.tripContainer}
-          key={index}
+            className={classes.tripContainer}
+            key={index}
           >
             <TextInput
               label="Enter a trip name"
@@ -94,7 +92,7 @@ export default function TripInfo({ trips, updateTrips}: TripInfoProps) {
                 startDate: start,
                 endDate: end,
               })}
-              />
+            />
 
 
             <Button variant="light" color="red" onClick={() => removeItem(index)}>
